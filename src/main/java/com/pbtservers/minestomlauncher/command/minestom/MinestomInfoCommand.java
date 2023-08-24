@@ -1,6 +1,6 @@
-package com.thecrownstudios.minestomlauncher.command.minestom;
+package com.pbtservers.minestomlauncher.command.minestom;
 
-import com.thecrownstudios.minestomlauncher.util.MessageUtil;
+import com.pbtservers.minestomlauncher.util.MessageUtil;
 import net.kyori.adventure.key.Key;
 import net.kyori.adventure.sound.Sound;
 import net.minestom.server.command.CommandSender;

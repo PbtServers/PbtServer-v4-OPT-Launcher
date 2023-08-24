@@ -1,7 +1,7 @@
-package com.thecrownstudios.minestomlauncher.util;
+package com.pbtservers.minestomlauncher.util;
 
-import com.thecrownstudios.minestomlauncher.MinestomData;
-import com.thecrownstudios.minestomlauncher.MinestomLauncher;
+import com.pbtservers.minestomlauncher.MinestomData;
+import com.pbtservers.minestomlauncher.MinestomLauncher;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.format.NamedTextColor;
@@ -67,7 +67,7 @@ public final class MessageUtil {
             .append(newline())
             .append(CUBE_COMPONENT_LINE)
             .append(text("   MINESTOM LAUNCHER"))
-            .append(space().append(text(MinestomLauncher.LAUNCHER_VERSION_NAME, NamedTextColor.GRAY, TextDecoration.ITALIC)))
+            .append(space().append(Component.text(MinestomLauncher.LAUNCHER_VERSION_NAME, NamedTextColor.GRAY, TextDecoration.ITALIC)))
             .append(newline())
             .append(CUBE_COMPONENT_LINE)
 

@@ -1,4 +1,4 @@
-package com.thecrownstudios.minestomlauncher;
+package com.pbtservers.minestomlauncher;
 
 public final class Main {
 

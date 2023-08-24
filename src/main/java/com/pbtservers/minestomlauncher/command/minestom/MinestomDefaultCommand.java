@@ -1,4 +1,4 @@
-package com.thecrownstudios.minestomlauncher.command.minestom;
+package com.pbtservers.minestomlauncher.command.minestom;
 
 import net.kyori.adventure.key.Key;
 import net.kyori.adventure.sound.Sound;

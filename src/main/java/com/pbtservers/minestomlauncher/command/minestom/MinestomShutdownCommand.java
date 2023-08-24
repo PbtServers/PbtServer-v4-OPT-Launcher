@@ -1,4 +1,4 @@
-package com.thecrownstudios.minestomlauncher.command.minestom;
+package com.pbtservers.minestomlauncher.command.minestom;
 
 import net.minestom.server.command.builder.Command;
 

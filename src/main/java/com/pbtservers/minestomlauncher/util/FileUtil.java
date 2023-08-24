@@ -1,13 +1,13 @@
-package com.thecrownstudios.minestomlauncher.util;
+package com.pbtservers.minestomlauncher.util;
 
 import com.fasterxml.jackson.core.util.DefaultPrettyPrinter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectReader;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.databind.module.SimpleModule;
-import com.thecrownstudios.minestomlauncher.MinestomData;
-import com.thecrownstudios.minestomlauncher.io.MinestomDataDeserializer;
-import com.thecrownstudios.minestomlauncher.io.MinestomDataSerializer;
+import com.pbtservers.minestomlauncher.MinestomData;
+import com.pbtservers.minestomlauncher.io.MinestomDataDeserializer;
+import com.pbtservers.minestomlauncher.io.MinestomDataSerializer;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.File;

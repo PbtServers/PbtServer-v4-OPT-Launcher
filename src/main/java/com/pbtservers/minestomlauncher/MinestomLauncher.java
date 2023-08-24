@@ -1,10 +1,10 @@
-package com.thecrownstudios.minestomlauncher;
+package com.pbtservers.minestomlauncher;
 
-import com.thecrownstudios.minestomlauncher.command.ShutdownCommand;
-import com.thecrownstudios.minestomlauncher.util.FileResult;
-import com.thecrownstudios.minestomlauncher.util.FileUtil;
-import com.thecrownstudios.minestomlauncher.util.InstanceGenUtil;
-import com.thecrownstudios.minestomlauncher.util.ObjectTriple;
+import com.pbtservers.minestomlauncher.util.InstanceGenUtil;
+import com.pbtservers.minestomlauncher.util.ObjectTriple;
+import com.pbtservers.minestomlauncher.command.ShutdownCommand;
+import com.pbtservers.minestomlauncher.util.FileResult;
+import com.pbtservers.minestomlauncher.util.FileUtil;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.logger.slf4j.ComponentLogger;
 import net.minestom.server.MinecraftServer;
@@ -25,14 +25,14 @@ import org.jetbrains.annotations.NotNull;
 import java.nio.file.Path;
 import java.time.Duration;
 
-import static com.thecrownstudios.minestomlauncher.util.MessageUtil.*;
+import static com.pbtservers.minestomlauncher.util.MessageUtil.*;
 import static net.kyori.adventure.text.Component.text;
 
 public final class MinestomLauncher {
 
     private static final ComponentLogger LOGGER = ComponentLogger.logger(MinestomLauncher.class);
 
-    public static final String LAUNCHER_VERSION_NAME = "1.2.3";
+    public static final String LAUNCHER_VERSION_NAME = "1.0.0";
     public static final String CONFIG_LOCATION = System.getProperty("config.location", "server.json");
 
     public MinestomLauncher() {}
@@ -108,9 +108,9 @@ public final class MinestomLauncher {
         CommandManager commandManager = MinecraftServer.getCommandManager();
         commandManager.register(new ShutdownCommand());
         //commandManager.register(new MinestomDefaultCommand());
-        commandManager.setUnknownCommandCallback((sender, command) -> sender.sendMessage(text("Unknown command", NamedTextColor.RED)));
+        commandManager.setUnknownCommandCallback((sender, command) -> sender.sendMessage(text("Comando Invalido.", NamedTextColor.RED)));
 
-        MinecraftServer.getSchedulerManager().buildShutdownTask(() -> System.out.println("Thanks for using Minestom Launcher."));
+        MinecraftServer.getSchedulerManager().buildShutdownTask(() -> System.out.println("Launcher de Minestom Iniciado Correctamente."));
 
         minecraftServer.start(networkData.ip(), networkData.port());
 

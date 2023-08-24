@@ -1,4 +1,4 @@
-package com.thecrownstudios.minestomlauncher.util;
+package com.pbtservers.minestomlauncher.util;
 
 import org.jetbrains.annotations.Nullable;
 

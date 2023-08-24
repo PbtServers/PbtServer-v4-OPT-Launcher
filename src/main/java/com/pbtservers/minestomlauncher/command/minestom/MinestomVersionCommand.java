@@ -1,9 +1,10 @@
-package com.thecrownstudios.minestomlauncher.command.minestom;
+package com.pbtservers.minestomlauncher.command.minestom;
 
-import com.thecrownstudios.minestomlauncher.MinestomLauncher;
-import com.thecrownstudios.minestomlauncher.util.MessageUtil;
+import com.pbtservers.minestomlauncher.MinestomLauncher;
+import com.pbtservers.minestomlauncher.util.MessageUtil;
 import net.kyori.adventure.key.Key;
 import net.kyori.adventure.sound.Sound;
+import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.event.HoverEvent;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.minestom.server.Git;
@@ -15,7 +16,7 @@ import net.minestom.server.command.builder.CommandContext;
 import net.minestom.server.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
-import static com.thecrownstudios.minestomlauncher.util.MessageUtil.*;
+import static com.pbtservers.minestomlauncher.util.MessageUtil.*;
 import static net.kyori.adventure.identity.Identity.nil;
 import static net.kyori.adventure.text.Component.*;
 import static net.kyori.adventure.text.event.ClickEvent.openUrl;
@@ -46,7 +47,7 @@ public class MinestomVersionCommand extends Command {
 				.append(space())
 				.append(space())
 				.append(text("launcher: ", NamedTextColor.GRAY))
-				.append(text(MinestomLauncher.LAUNCHER_VERSION_NAME)
+				.append(Component.text(MinestomLauncher.LAUNCHER_VERSION_NAME)
 						.hoverEvent(HoverEvent.showText(text("Open github project", NamedTextColor.GRAY)))
 						.clickEvent(openUrl(GITHUB_URL))
 				)

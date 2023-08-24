@@ -1,4 +1,4 @@
-package com.thecrownstudios.minestomlauncher.util;
+package com.pbtservers.minestomlauncher.util;
 
 public enum FileResult {
     EXISTING,

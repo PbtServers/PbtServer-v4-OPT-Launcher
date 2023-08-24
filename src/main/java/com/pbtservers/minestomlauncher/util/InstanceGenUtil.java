@@ -1,4 +1,4 @@
-package com.thecrownstudios.minestomlauncher.util;
+package com.pbtservers.minestomlauncher.util;
 
 import net.minestom.server.instance.InstanceContainer;
 import net.minestom.server.instance.block.Block;

@@ -1,4 +1,4 @@
-package com.thecrownstudios.minestomlauncher.command;
+package com.pbtservers.minestomlauncher.command;
 
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.minestom.server.MinecraftServer;
@@ -20,7 +20,7 @@ public class ShutdownCommand extends Command {
 
 	private void execute(@NotNull CommandSender commandSender, @NotNull CommandContext commandContext) {
 		if (commandSender instanceof Player player) {
-			player.sendMessage(text("This command can only be used from the console!", NamedTextColor.RED));
+			player.sendMessage(text("Este comando es solo de terminal!", NamedTextColor.RED));
 			return;
 		}
 

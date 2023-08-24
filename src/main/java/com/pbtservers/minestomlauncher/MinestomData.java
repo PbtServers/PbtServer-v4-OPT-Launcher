@@ -1,4 +1,4 @@
-package com.thecrownstudios.minestomlauncher;
+package com.pbtservers.minestomlauncher;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;

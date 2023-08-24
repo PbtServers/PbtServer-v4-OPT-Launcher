@@ -1,9 +1,9 @@
-package com.thecrownstudios.minestomlauncher.io;
+package com.pbtservers.minestomlauncher.io;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.SerializerProvider;
 import com.fasterxml.jackson.databind.ser.std.StdSerializer;
-import com.thecrownstudios.minestomlauncher.MinestomData;
+import com.pbtservers.minestomlauncher.MinestomData;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.IOException;
