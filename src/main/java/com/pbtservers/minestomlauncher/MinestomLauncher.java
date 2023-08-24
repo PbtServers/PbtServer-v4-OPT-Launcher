@@ -110,7 +110,7 @@ public final class MinestomLauncher {
         //commandManager.register(new MinestomDefaultCommand());
         commandManager.setUnknownCommandCallback((sender, command) -> sender.sendMessage(text("Comando Invalido.", NamedTextColor.RED)));
 
-        MinecraftServer.getSchedulerManager().buildShutdownTask(() -> System.out.println("Launcher de Minestom Iniciado Correctamente."));
+        MinecraftServer.getSchedulerManager().buildShutdownTask(() -> System.out.println("Launcher de Minestom Apagado Correctamente."));
 
         minecraftServer.start(networkData.ip(), networkData.port());
 
